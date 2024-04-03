@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+
+body {
+  background-color: rgb(85, 95, 80);
+  color: #fff;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: rgb(112, 129, 107);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  background: linear-gradient(45deg, #ff681f, rgb(65, 61, 61));
+}
+
+.home {
+  margin-top: 16px;
+  margin: auto;
+  width: 90%;
+  display: grid;
+  height: 50vh;
+  align-items: center;
+  background-image: url("images/car_wash3.jpg");
+  background-position: center;
+}
+
+.home h1,
+.home h3 {
+  text-align: center;
+  color: orangered;
+}
+.home h1 {
+  font: 4em sans-serif;
+}
+
+.home-content h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.home-content h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+.row {
+  width: 90%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  color: black;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about-us,
+.achievements {
+  margin: 3rem 0;
+}
+
+.about-us h1 {
+  text-align: center;
+}
+
+.col {
+  float: left;
+  width: 33.333%;
+  padding: 0 10px;
+}
+
+footer {
+  margin-top: auto;
+  font-size: 0.8em;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
