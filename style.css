@@ -106,7 +106,8 @@ body {
   margin: 3rem 0;
 }
 
-.about-us h1 {
+.about-us h1,
+.achievements h1 {
   text-align: center;
 }
 
@@ -123,4 +124,64 @@ footer {
   color: white;
   text-align: center;
   padding: 1em;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-container h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.input-group {
+  margin: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="tel"],
+.input-group input[type="date"],
+.input-group input[type="time"],
+.input-group select {
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-group input[type="submit"] {
+  background-color: rgb(85, 95, 80);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-group input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.booking {
+  font-family: Arial, sans-serif;
+  margin: 3rem 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: require();
+  color: black;
 }
