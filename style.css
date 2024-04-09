@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@340;400;500;600;700;800;900&display=swap'); 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@340;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -82,9 +82,11 @@ body {
   padding: 0 10px;
 }
 
-.row, .about-us, .faq-section{
+.row,
+.about-us,
+.faq-section {
   width: 90%;
-  margin: auto ;
+  margin: auto;
   margin-top: 3rem;
 }
 
@@ -102,15 +104,15 @@ body {
   clear: both;
 }
 
-.row{
-  color: black; 
+.row {
+  color: black;
 }
 
-.testimonials h1{
-text-align: center;
+.testimonials h1 {
+  text-align: center;
 }
 
-.testimonial-name{
+.testimonial-name {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 5px;
@@ -136,20 +138,21 @@ text-align: center;
   object-fit: cover;
 }
 
-.faq-section h1,h2{
-color: khaki;
-text-align: center;
+.faq-section h1,
+h2 {
+  color: khaki;
+  text-align: center;
 }
 
-details{
+details {
   background-color: rgb(112, 129, 107);
   display: flex;
-  color:black;
+  color: black;
   font-size: 1.2rem;
 }
 
-summary{
-  padding: .5em 1.3rem;
+summary {
+  padding: 0.5em 1.3rem;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -160,27 +163,26 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-summary:after{
+summary:after {
   content: "\002B";
 }
-details[open] summary{
-border-bottom: 1px solid #aaa;
-margin-bottom: .5em;
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
 }
 
-details[open] summary:after{
+details[open] summary:after {
   content: "\00D7";
 }
 
-details[open] div{
-  padding: .5em 1em;
+details[open] div {
+  padding: 0.5em 1em;
   color: khaki;
 }
 
-.about-us{
+.about-us {
   background-color: rgb(112, 129, 107);
 }
-
 
 .achievements {
   margin: 3rem 0;
