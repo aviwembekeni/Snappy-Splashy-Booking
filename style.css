@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@340;400;500;600;700;800;900&display=swap'); 
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +9,7 @@
 
 body {
   background-color: rgb(85, 95, 80);
-  color: #fff;
+  color: khaki;
 }
 
 .header {
@@ -32,7 +34,7 @@ body {
 
 .navbar a {
   font-size: 18px;
-  color: #fff;
+  color: khaki;
   text-decoration: none;
   font-weight: 500;
   margin-left: 35px;
@@ -57,7 +59,7 @@ body {
 .home h1,
 .home h3 {
   text-align: center;
-  color: orangered;
+  color: khaki;
 }
 .home h1 {
   font: 4em sans-serif;
@@ -80,9 +82,9 @@ body {
   padding: 0 10px;
 }
 
-.row {
+.row, .about-us, .faq-section{
   width: 90%;
-  margin: auto;
+  margin: auto ;
   margin-top: 3rem;
 }
 
@@ -94,19 +96,98 @@ body {
   color: black;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.about-us,
+.row{
+  color: black; 
+}
+
+.testimonials h1{
+text-align: center;
+}
+
+.testimonial-name{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+.testimonial-role {
+  font-size: 16px;
+  color: #666666;
+}
+
+.testimonial-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+
+.testimonial-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.faq-section h1,h2{
+color: khaki;
+text-align: center;
+}
+
+details{
+  background-color: rgb(112, 129, 107);
+  display: flex;
+  color:black;
+  font-size: 1.2rem;
+}
+
+summary{
+  padding: .5em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  transition: height 1s ease;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after{
+  content: "\002B";
+}
+details[open] summary{
+border-bottom: 1px solid #aaa;
+margin-bottom: .5em;
+}
+
+details[open] summary:after{
+  content: "\00D7";
+}
+
+details[open] div{
+  padding: .5em 1em;
+  color: khaki;
+}
+
+.about-us{
+  background-color: rgb(112, 129, 107);
+}
+
+
 .achievements {
   margin: 3rem 0;
 }
 
-.about-us h1 {
+.about-us h1,
+.achievements h1 {
   text-align: center;
 }
 
@@ -123,4 +204,64 @@ footer {
   color: white;
   text-align: center;
   padding: 1em;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-container h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.input-group {
+  margin: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="tel"],
+.input-group input[type="date"],
+.input-group input[type="time"],
+.input-group select {
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-group input[type="submit"] {
+  background-color: rgb(85, 95, 80);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-group input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.booking {
+  font-family: Arial, sans-serif;
+  margin: 3rem 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: require();
+  color: black;
 }
