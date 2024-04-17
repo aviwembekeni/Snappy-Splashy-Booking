@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=roboto slab:wght@340;400;500;600;700;800;900&display=swap'); 
+@import url("https://fonts.googleapis.com/css2?family=roboto slab:wght@340;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #262525 ;
+  background-color: #262525;
   color: rgb(85, 95, 80);
   text-align: center;
 }
@@ -20,8 +20,8 @@ body {
   left: 0;
   width: 100%;
   padding: 20px 10%;
-  background: rgb(85, 95, 80,0.8);
-  box-shadow: 0 4px 15px 0 rgb(112, 129, 107,0.8);
+  background: rgb(85, 95, 80, 0.8);
+  box-shadow: 0 4px 15px 0 rgb(112, 129, 107, 0.8);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,11 +58,11 @@ body {
   background-image: url("images/img-004.webp");
   background-position: center;
   border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgb(112, 129, 107,0.8);
+  box-shadow: 0 4px 8px 0 rgb(112, 129, 107, 0.8);
 }
 
 .home h1 {
-  font-size: 4em ;
+  font-size: 4em;
   text-align: center;
   color: rgb(85, 129, 107);
 }
@@ -79,25 +79,27 @@ body {
   width: 50%;
   padding: 0 10px;
 }
-.about-us div{
+.about-us div {
   margin-top: 10px;
 }
-.row, .about-us, .faq-section{
+.row,
+.about-us,
+.faq-section {
   width: 90%;
-  margin: auto ;
+  margin: auto;
   margin-top: 3rem;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgb(85, 129, 107,0.8);
+  box-shadow: 0 4px 8px 0 rgb(85, 129, 107, 0.8);
   padding: 16px;
   text-align: center;
-  background-color: rgb(85, 129, 107,0.8);
+  background-color: rgb(85, 129, 107, 0.8);
   border-radius: 8px;
   color: black;
 }
 
-.card p b{
+.card p b {
   color: khaki;
 }
 .row:after {
@@ -106,15 +108,15 @@ body {
   clear: both;
 }
 
-.row{
-  color: black; 
+.row {
+  color: black;
 }
 
-.testimonials h1{
-text-align: center;
+.testimonials h1 {
+  text-align: center;
 }
 
-.testimonial-name{
+.testimonial-name {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 5px;
@@ -140,22 +142,23 @@ text-align: center;
   object-fit: cover;
 }
 
-.faq-section h1,h2{
-color: rgb(85, 95, 80);
-text-align: center;
+.faq-section h1,
+h2 {
+  color: rgb(85, 95, 80);
+  text-align: center;
 }
 
-details{
-  background-color: rgb(85, 129, 107,0.8);
+details {
+  background-color: rgb(85, 129, 107, 0.8);
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 khaki;
   display: flex;
-  color:black;
+  color: black;
   font-size: 1.2rem;
 }
 
-summary{
-  padding: .5em 1.3rem;
+summary {
+  padding: 0.5em 1.3rem;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -166,27 +169,27 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-summary:after{
+summary:after {
   content: "\002B";
 }
-details[open] summary{
-border-bottom: 1px solid #aaa;
-margin-bottom: .5em;
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
 }
 
-details[open] summary:after{
+details[open] summary:after {
   content: "\00D7";
 }
 
-details[open] div{
-  padding: .5em 1em;
+details[open] div {
+  padding: 0.5em 1em;
   color: khaki;
 }
 
-.about-us{
+.about-us {
   background-color: whitesmoke;
   border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgb(112, 129, 107,0.8);
+  box-shadow: 0 4px 8px 0 rgb(112, 129, 107, 0.8);
 }
 
 .achievements {
@@ -264,7 +267,9 @@ footer {
   background-color: #262525;
 }
 
-.booking, .register, .contact{
+.booking,
+.register,
+.contact {
   font-family: Arial, sans-serif;
   margin: 4rem 0;
   padding: 20px;
@@ -275,21 +280,21 @@ footer {
   color: black;
 }
 
-.dropdown{
+.dropdown {
   position: relative;
   display: inline-block;
 }
 
-.dropbtn{
+.dropbtn {
   color: khaki;
   border: none;
   cursor: pointer;
 }
-.dropbtn:hover{
+.dropbtn:hover {
   background-color: #0056b3;
 }
 
-.dropdown-content{
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -297,22 +302,22 @@ footer {
   z-index: 1;
 }
 
-.dropdown-content a{
+.dropdown-content a {
   color: rgb(85, 95, 80);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content a:hover{
+.dropdown-content a:hover {
   background-color: rgb(85, 95, 80);
 }
 
-.dropdown:hover .dropdown-content{
-display: block;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.dropdown:hover .dropbtn{
+.dropdown:hover .dropbtn {
   background-color: rgb(85, 95, 80);
 }
 
