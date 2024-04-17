@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=roboto slab:wght@340;400;500;600;700;800;900&display=swap'); 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto slab", "sans-serif";
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #262525 ;
+  color: rgb(85, 95, 80);
+  text-align: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: rgb(85, 95, 80,0.8);
+  box-shadow: 0 4px 15px 0 rgb(112, 129, 107,0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: khaki;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  background: linear-gradient(45deg, rgb(85, 95, 80), rgb(65, 61, 61));
+}
+
+.home {
+  margin-top: 16px;
+  margin: auto;
+  width: 90%;
+  display: grid;
+  height: 50vh;
+  align-items: center;
+  background-image: url("images/img-004.webp");
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgb(112, 129, 107,0.8);
+}
+
+.home h1 {
+  font-size: 4em ;
+  text-align: center;
+  color: rgb(85, 129, 107);
+}
+
+.home h3 {
+  font-size: 1.5em;
+  text-align: center;
+  color: khaki;
+  font-weight: bolder;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+.about-us div{
+  margin-top: 10px;
+}
+.row, .about-us, .faq-section{
+  width: 90%;
+  margin: auto ;
+  margin-top: 3rem;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgb(85, 129, 107,0.8);
+  padding: 16px;
+  text-align: center;
+  background-color: rgb(85, 129, 107,0.8);
+  border-radius: 8px;
+  color: black;
+}
+
+.card p b{
+  color: khaki;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row{
+  color: black; 
+}
+
+.testimonials h1{
+text-align: center;
+}
+
+.testimonial-name{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+.testimonial-role {
+  font-size: 16px;
+  color: #353232;
+}
+
+.testimonial-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+
+.testimonial-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.faq-section h1,h2{
+color: rgb(85, 95, 80);
+text-align: center;
+}
+
+details{
+  background-color: rgb(85, 129, 107,0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 khaki;
+  display: flex;
+  color:black;
+  font-size: 1.2rem;
+}
+
+summary{
+  padding: .5em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  transition: height 1s ease;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after{
+  content: "\002B";
+}
+details[open] summary{
+border-bottom: 1px solid #aaa;
+margin-bottom: .5em;
+}
+
+details[open] summary:after{
+  content: "\00D7";
+}
+
+details[open] div{
+  padding: .5em 1em;
+  color: khaki;
+}
+
+.about-us{
+  background-color: whitesmoke;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgb(112, 129, 107,0.8);
+}
+
+.achievements {
+  margin: 3rem 0;
+}
+
+.about-us h1,
+.achievements h1 {
+  text-align: center;
+}
+
+.col {
+  float: left;
+  width: 33.333%;
+  padding: 0 10px;
+}
+
+footer {
+  margin-top: 10px;
+  font-size: 0.8em;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 0.1em;
+}
+
+.form-container {
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px khaki;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-container h2 {
+  margin-top: 0;
+  text-align: center;
+  color: rgb(85, 95, 80);
+  font-weight: bolder;
+}
+
+.input-group {
+  margin: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="tel"],
+.input-group input[type="date"],
+.input-group input[type="time"],
+.input-group input[type="url"],
+.input-group select {
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-group input[type="submit"] {
+  background-color: rgb(85, 95, 80);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-group input[type="submit"]:hover {
+  background-color: #262525;
+}
+
+.booking, .register, .contact{
+  font-family: Arial, sans-serif;
+  margin: 4rem 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: black;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn{
+  color: khaki;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn:hover{
+  background-color: #0056b3;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  z-index: 1;
+}
+
+.dropdown-content a{
+  color: rgb(85, 95, 80);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover{
+  background-color: rgb(85, 95, 80);
+}
+
+.dropdown:hover .dropdown-content{
+display: block;
+}
+
+.dropdown:hover .dropbtn{
+  background-color: rgb(85, 95, 80);
+}
+
+textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Your Car Wash Business</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="register">
+    <header class="header">
+      <a href="index.html" class="logo">Snappy Splash Booking(logo)</a>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#abous-us">About</a>
+        <a href="search.html">Find</a>
+       <div class="dropdown">
+          <a class="dropbtn">Book/Register</a>
+          <div class="dropdown-content">
+            <a href="booking.html">Book</a><hr>
+            <a href="registration.html">Register</a>
+          </div>
+        </div>
+        <a href="advertise.html">Advertise</a>
+        <div class="dropdown">
+          <a class="dropbtn">Contact</a>
+          <div class="dropdown-content">
+            <a href="contact.html">contact us</a><hr>
+            <a href="rating.html">rate our platform</a>
+          </div>
+        </div>       
+      </nav>
+    </header>
+    <div class="form-container">
+      <h2>Register Your Car Wash Business</h2>
+      <form action="/submit-your-registration" method="post">
+        <div class="input-group">
+            <label for="business_name">Business Name:</label><br>
+            <input type="text" id="business_name" name="business_name" required><br>
+        </div>
+
+        <div class="input-group">
+            <label for="business_registration">Business Registration Number:</label><br>
+            <input type="text" id="business_registration" name="business_registration" required><br>
+        </div>
+     
+        <div class="input-group">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br> 
+        </div>
+
+        <div class="input-group">
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" required><br> 
+        </div>
+        
+        <div class="input-group">
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" required><br>
+        </div>
+        
+        <div>
+            <label for="services_offered">Services Offered:</label><br>
+            <textarea id="services_offered" name="services_offered" required rows="10" cols="48"
+               placeholder="List all your services here...">
+            </textarea><br>
+        </div>
+
+
+        <div class="input-group">
+            <label for="opening_hours">Opening Hours:</label><br>
+            <input type="time" id="opening_hours" name="opening_hours" min="09:00" max="19:00" required><br>  
+        </div>
+
+        <div class="input-group">
+            <label for="website">Website:</label><br>
+            <input type="url" id="website" name="website"><br>
+        </div>
+
+        <div class="input-group">
+            <input type="submit" value="Register">
+        </div>     
+      </form>
+    </div>
+  </body>
+</html>
