@@ -33,6 +33,7 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
+  display: inline;
 }
 
 .navbar a {
@@ -65,6 +66,7 @@ body {
   font-size: 4em;
   text-align: center;
   color: rgb(85, 129, 107);
+  animation:colorchange-home-h1 4s alternate-reverse infinite;
 }
 
 .home h3 {
@@ -72,6 +74,7 @@ body {
   text-align: center;
   color: khaki;
   font-weight: bolder;
+  animation:colorchange-home-h3 4s alternate infinite;
 }
 
 .column {
@@ -325,4 +328,24 @@ textarea {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@keyframes colorchange-home-h1 {
+  0%{
+    color: khaki;
+  }
+
+  100%{
+    color: rgb(85, 129, 107);
+  }
+}
+
+@keyframes colorchange-home-h3 {
+  0%{
+    color: khaki;
+  }
+
+  100%{
+    color: rgb(85, 129, 107);
+  }
 }
