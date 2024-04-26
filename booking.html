@@ -34,7 +34,7 @@
     </header>
     <div class="form-container">
       <h2>Book Your Next wash</h2>
-      <form action="/submit-your-booking" method="post">
+      <form id="form">
         <div class="input-group">
           <label for="fullName">Full Name:</label>
           <input
@@ -82,9 +82,12 @@
         </div>
 
         <div class="input-group">
-          <input type="submit" value="Book Now" />
+          <input id="submit" type="submit" value="Book Now" />
         </div>
       </form>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
+
+<!-- action="/submit-your-booking" method="post" -->
