@@ -1,11 +1,17 @@
+/*The following code adds event listerners to the forms and handles form submission*/ 
+
+//Waiting for html document to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
+  //Select form : 'booking form' or 'registration form'
   const form = document.querySelector("#form");
   const registrationForm = document.querySelector("#registration_form");
 
   if (form) {
+    //Add an event listener for the booking form submission
     form.addEventListener("submit", function (event) {
       event.preventDefault(); 
 
+      //Retrieving data from the form
       const fullName = document.querySelector("#fullName").value;
       const email = document.querySelector("#email").value;
       const phoneNumber = document.querySelector("#phoneNumber").value;
@@ -13,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const bookingDate = document.querySelector("#bookingDate").value;
       const bookingTime = document.querySelector("#bookingTime").value;
 
-
+      //Store the retrieved form data in localstorage
       localStorage.setItem("fullName", fullName);
       localStorage.setItem("email", email);
       localStorage.setItem("phoneNumber", phoneNumber);
@@ -21,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.setItem("bookingDate", bookingDate);
       localStorage.setItem("bookingTime", bookingTime);
 
-    
+      
       window.location.href = "confirmation.html";
     });
   }
@@ -53,7 +59,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  /*Displaying data on the confirmation page*/
 
+  //
   const confirmationPage = window.location.pathname.split("/").pop();
   if (confirmationPage === "confirmation.html") {
     document.getElementById("fullName").textContent = localStorage.getItem("fullName");
